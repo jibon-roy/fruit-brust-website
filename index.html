@@ -13,7 +13,20 @@
     <!-- Tailwind and daisyUi CDN style -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-
+    <!-- Custome style -->
+    <style>
+        .main-btn{
+            background: #F85559;
+            border: 0;
+            color: white;
+            font-weight: 800;
+            text-transform: none;
+        }
+        .main-btn:hover{
+            background: #e24d4f;
+            cursor: pointer;
+        }
+    </style>
 </head>
 
 <body class="max-sm:px-2 max-lg:px-3">
@@ -56,8 +69,8 @@
                         <label for="my-drawer-4" tabindex="0" class="btn btn-ghost btn-circle">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h16M4 18h7" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                    d="M4 6h16M4 12h16M4 18h16 " />
                             </svg>
                         </label>
                     </div>
@@ -75,10 +88,16 @@
             </div>
         </div>
         <!-- This is Banner section -->
-        <section name="banner-section" class="relative">
-            <div class="carousel w-full">
+        <section name="banner-section" class="relative container mx-auto">
+            <div class="carousel w-full overflow-hidden">
                 <div id="slide1" class="carousel-item relative w-full">
-                    <div class="absolute w-full h-full bg-gradient-to-b from-[#121212] to-[#00000011] opacity-50"></div>
+                    <div class="text-center absolute w-full h-full bg-gradient-to-b from-[#121212bb] to-[#00000011]">
+                        <h1 class="text-center text-6xl text-white font-extrabold mt-[5%]">
+                            Exotic tastes at your <br>doorstep
+                        </h1>
+                        <p class="text-center text-white my-5">We supply highly quality organic products</p>
+                        <button class="main-btn btn text-center">Shop Now</button>
+                    </div>
                     <img src="./images/banner1.png" class="w-full" />
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide4" class="btn btn-circle">❮</a>
@@ -86,7 +105,13 @@
                     </div>
                 </div>
                 <div id="slide2" class="carousel-item relative w-full">
-                    <div class="absolute w-full h-full bg-gradient-to-b from-[#121212] to-[#00000011] opacity-50"></div>
+                    <div class="text-center absolute w-full h-full bg-gradient-to-b from-[#121212bb] to-[#00000011]">
+                        <h1 class="text-center text-6xl text-white font-extrabold mt-[5%]">
+                            Exotic tastes at your <br>doorstep
+                        </h1>
+                        <p class="text-center text-white my-5">We supply highly quality organic products</p>
+                        <button class="main-btn btn text-center">Shop Now</button>
+                    </div>
                     <img src="./images/banner2.png" class="w-full" />
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide1" class="btn btn-circle">❮</a>
@@ -94,7 +119,13 @@
                     </div>
                 </div>
                 <div id="slide3" class="carousel-item relative w-full">
-                    <div class="absolute w-full h-full bg-gradient-to-b from-[#121212] to-[#00000011] opacity-70"></div>
+                    <div class="text-center absolute w-full h-full bg-gradient-to-b from-[#121212bb] to-[#00000011]">
+                        <h1 class="text-center text-6xl text-white font-extrabold mt-[5%]">
+                            Exotic tastes at your <br>doorstep
+                        </h1>
+                        <p class="text-center text-white my-5">We supply highly quality organic products</p>
+                        <button class="main-btn btn text-center">Shop Now</button>
+                    </div>
                     <img src="./images/banner3.png" class="w-full" />
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide2" class="btn btn-circle">❮</a>
@@ -102,7 +133,13 @@
                     </div>
                 </div>
                 <div id="slide4" class="carousel-item relative w-full">
-                    <div class="absolute w-full h-full bg-gradient-to-b from-[#121212] to-[#00000011] opacity-50"></div>
+                    <div class="text-center absolute w-full h-full bg-gradient-to-b from-[#121212bb] to-[#00000011]">
+                        <h1 class="text-center text-6xl text-white font-extrabold mt-[5%]">
+                            Exotic tastes at your <br>doorstep
+                        </h1>
+                        <p class="text-center text-white my-5">We supply highly quality organic products</p>
+                        <button class="main-btn btn text-center">Shop Now</button>
+                    </div>
                     <img src="./images/banner4.png" class="w-full" />
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide3" class="btn btn-circle">❮</a>
@@ -138,6 +175,7 @@
     </header>
     <!-- This is main part -->
     <main>
+        
     </main>
     <!-- This is footer part -->
     <footer></footer>
