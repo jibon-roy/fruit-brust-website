@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Burst</title>
     <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <!-- Font awasome CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Tailwind and daisyUi CDN style -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -14,7 +18,30 @@
 
 <body>
     <!-- This is header part -->
-    <header></header>
+    <header>
+        <!-- This is nav section -->
+        <div class="container mx-auto my-10 navbar bg-base-100 bg-[#F85559] h-28 rounded-full p-12 justify-between">
+
+            <div class="menu">
+                <ul class="flex text-lg text-white font-medium">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">All Fruits</a></li>
+                </ul>
+            </div>
+            <div class="logo gap-3">
+                <img src="./images/logo.png" width="50px" alt="" srcset="">
+                <a href="#" class="font-bold text-4xl text-white">Friut Brust</a>
+            </div>
+            <div class="flex-none gap-2">
+                <div class="form-control relative">
+                    <input type="text" placeholder="Search" class="input input-bordered w-40 md:w-auto rounded-full" />
+                    <i class="fa-solid fa-magnifying-glass absolute right-4 top-[50%] translate-y-[-50%]"></i>
+                </div>
+            </div>
+        </div>
+    </header>
     <!-- This is main part -->
     <main></main>
     <!-- This is footer part -->
