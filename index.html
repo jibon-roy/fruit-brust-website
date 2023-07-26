@@ -16,12 +16,12 @@
 
 </head>
 
-<body>
+<body class="max-sm:px-2 max-lg:px-3">
     <!-- This is header part -->
     <header>
-        <!-- This is nav section -->
-        <div class="container mx-auto my-10 navbar bg-base-100 bg-[#F85559] h-28 rounded-full p-12 justify-between">
-
+        <!-- This is learge device nav section -->
+        <div
+            class="container max-lg:hidden mx-auto my-10 navbar bg-base-100 bg-[#F85559] h-28 rounded-full p-12 justify-between">
             <div class="menu">
                 <ul class="flex text-lg text-white font-medium">
                     <li><a href="#">Home</a></li>
@@ -36,9 +36,42 @@
             </div>
             <div class="flex-none gap-2">
                 <div class="form-control relative">
-                    <input type="text" placeholder="Search" class="input input-bordered w-40 md:w-auto rounded-full" />
+                    <input type="text" placeholder="Search"
+                        class="input input-bordered xl:w-96 md:w-auto rounded-full" />
                     <i class="fa-solid fa-magnifying-glass absolute right-4 top-[50%] translate-y-[-50%]"></i>
                 </div>
+            </div>
+        </div>
+        <!-- This is medium or lowend device nav bar -->
+        <div class="navbar bg-base-100 max-lg:flex lg:hidden my-6 p-0">
+            <div class=" gap-3 flex-1">
+                <img src="./images/logo.png" width="50px" alt="" srcset="">
+                <a href="#" class="font-bold text-4xl text-black">Friut Brust</a>
+            </div>
+            <div class=" flex-none">
+                <div class="drawer drawer-end">
+                    <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
+                    <div class="drawer-content">
+                      <!-- Page content here -->
+                      <label for="my-drawer-4" tabindex="0" class="btn btn-ghost btn-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h7" />
+                        </svg>
+                    </label>
+                    </div> 
+                    <div class="drawer-side">
+                      <label for="my-drawer-4" class="drawer-overlay"></label>
+                      <ul class="menu p-4 w-auto h-full bg-base-200 text-base-content">
+                        <!-- Sidebar content here -->
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">All Fruits</a></li>
+                      </ul>
+                    </div>
+                  </div>
             </div>
         </div>
     </header>
