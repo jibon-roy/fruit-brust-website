@@ -15,14 +15,15 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Custome style -->
     <style>
-        .main-btn{
+        .main-btn {
             background: #F85559;
             border: 0;
             color: white;
             font-weight: 800;
             text-transform: none;
         }
-        .main-btn:hover{
+
+        .main-btn:hover {
             background: #e24d4f;
             cursor: pointer;
         }
@@ -31,7 +32,7 @@
 
 <body class="max-sm:px-2 max-lg:px-3">
     <!-- This is header part -->
-    <header>
+    <header class="max-xl:my-10 max-lg:my-0">
         <!-- This is learge device nav section -->
         <div
             class="container max-lg:hidden mx-auto my-10 navbar bg-base-100 bg-[#F85559] h-28 rounded-full p-12 justify-between">
@@ -88,7 +89,7 @@
             </div>
         </div>
         <!-- This is Banner section -->
-        <section name="banner-section" class="relative container mx-auto">
+        <section class="relative container mx-auto">
             <div class="carousel w-full overflow-hidden">
                 <div id="slide1" class="carousel-item relative w-full">
                     <div class="text-center absolute w-full h-full bg-gradient-to-b from-[#121212bb] to-[#00000011]">
@@ -175,7 +176,15 @@
     </header>
     <!-- This is main part -->
     <main>
-        
+        <!-- Deal of the day section -->
+        <section class="container mx-auto my-16">
+            <div class="flex">
+                <div class="w-6/12">
+                    <h1 class="">Deal of the day</h1>
+                </div>
+                <div class="w-6/12"></div>
+            </div>
+        </section>
     </main>
     <!-- This is footer part -->
     <footer></footer>
